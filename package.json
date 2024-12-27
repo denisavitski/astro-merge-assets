@@ -1,0 +1,44 @@
+{
+  "name": "astro-merge-assets",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisavitski/astro-merge-assets.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisavitski/astro-merge-assets/issues"
+  },
+  "homepage": "https://github.com/denisavitski/astro-merge-assets#readme",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vite-plugin-dts": "^4.4.0"
+  },
+  "dependencies": {
+    "astro": ">=0.0.0"
+  },
+  "peerDependencies": {
+    "astro": ">=0.0.0"
+  }
+}
